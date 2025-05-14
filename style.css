@@ -1,0 +1,475 @@
+/* Genel sayfa ayarları */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0 20px;
+}
+
+/* Başlıklar */
+h1,
+h2,
+h4 {
+    text-align: center;
+    color: #2e3d49;
+}
+
+/* Paragraflar */
+p {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Liste ayarları */
+ol,
+ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+/* Alt listeler */
+ul ul {
+    margin-left: 20px;
+}
+
+/* Bağlantılar */
+a {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #db1212;
+}
+
+/* Resimler */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bağlantı butonları */
+a[href*="html"] {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 8px 12px;
+    background-color: #8d8d8d;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a[href*="html"]:hover {
+    background-color: #afe5f7;
+}
+
+/* İçerik kutusu opsiyonel: Paragrafları çerçeveye almak için */
+.container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+}
+
+h2,
+h4 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after,
+h4::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #d8ff6e;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.topnav {
+    position: sticky;
+    top: 0;
+    background-color: #ffd500;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 100;
+}
+
+.topnav a {
+    color: rgb(189, 250, 22);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.topnav a:hover {
+    color: #b1d400;
+}
+
+li {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+li:hover {
+    transform: translateX(5px);
+    color: #4815ee;
+}
+
+form {
+    max-width: 500px;
+    /* Formun genişliği */
+    margin: 40px auto;
+    /* Otomatik yatay margin: ortalama */
+    background-color: #ffffff;
+    /* Opsiyonel: arka plan */
+    padding: 20px;
+    /* İç boşluk */
+    border-radius: 10px;
+    /* Kenar yumuşatma */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Hafif gölge */
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #2e3d49;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlıklar */
+h1,
+h2,
+h4 {
+    color: #9b0e0e;
+    text-align: center;
+}
+
+/* Navigasyon */
+.topnav {
+    background-color: #00f36d;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topnav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    color: #f57c00;
+}
+
+/* Form kutusu */
+form {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Form elemanları */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Form butonu */
+input[type="submit"] {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+/* Linkler */
+a {
+    color: #2b09e8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2d00f5;
+}
+
+/* Görseller */
+img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+body {
+    background-color: #B76E79;
+    /* gül kurusu */
+    color: white;
+    /* yazılar beyaz kalsın diye */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.topnav a {
+    color: #380de4;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    background-color: #f4d3d8;
+    color: black;
+    border-radius: 5px;
+}
+
+form {
+    color: #8B4F5A;
+    /* Form içindeki yazılar beyaz olsun */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Yarı şeffaf kutu */
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    /* input içindeki yazılar siyah olsun */
+}
+
+input[type="submit"] {
+    background-color: #8B4F5A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #a55d69;
+}
+
+.success-box {
+    display: none;
+    background-color: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+    padding: 15px 20px;
+    margin-top: 20px;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.success-box button {
+    background-color: #155724;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.success-box button:hover {
+    background-color: #0f3e1a;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+.top-left-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+}
+
+.haci-bayram-img {
+    width: 30%;
+    /* Yüzdeyle boyutlandırma */
+    height: auto;
+    /* Yükseklik orantılı olarak değişir */
+    display: block;
+    margin: 0 auto;
+    /* Fotoğrafı ortalar */
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 90%;
+    }
+
+    p {
+        padding: 0 10px;
+    }
+}
+
+/* Genel sayfa ayarları */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dccacd;
+    color: #000000;
+    margin: 0;
+    padding: 0 20px;
+}
+
+/* Başlıklar */
+h1,
+h2,
+h4 {
+    text-align: center;
+    color: #044a83;
+}
+
+/* Paragraflar */
+p {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Liste ayarları */
+ol,
+ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+/* Resim ayarları (responsive) */
+img {
+    max-width: 100%;
+    height: auto;
+    /* Resimlerin orantılı olarak boyutlandırılmasını sağlar */
+}
+
+style>
+
+/* Sayfa genel düzeni */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    color: #044a83;
+}
+
+/* Butonlar için stil */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    /* Yuvarlak köşeler */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    /* Renk değişimi */
+    transform: scale(1.1);
+    /* Butonun büyümesi */
+}
+
+button:active {
+    transform: scale(1);
+    /* Butona tıklandığında büyüklüğü sıfırlama */
+}
+
+/* Rota Bilgi Alanı */
+#rotaBilgi {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #34495e;
+}

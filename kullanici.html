@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kullanıcı Verileri</title>
+</head>
+
+<body>
+
+    <h1>Formdan Gelen Kullanıcı Bilgileri</h1>
+
+    <table border="1" id="userTable">
+        <thead>
+            <tr>
+                <th>Ad Soyad</th>
+                <th>Parola</th>
+                <th>E-posta</th>
+                <th>Yaş</th>
+                <th>Cinsiyet</th>
+                <th>İlgi Alanları</th>
+                <th>Doğum Tarihi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Veriler buraya eklenecek -->
+        </tbody>
+    </table>
+
+    <script>
+        window.onload = function () {
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get('name');
+            const password = params.get('password');
+            const email = params.get('email');
+            const age = params.get('age');
+            const gender = params.get('gender');
+            const interests = params.get('interests');
+            const birthdate = params.get('birthdate');
+
+            if (name && password && email) {
+                const tbody = document.querySelector('#userTable tbody');
+                const row = tbody.insertRow();
+
+                row.insertCell(0).innerText = name;
+                row.insertCell(1).innerText = password;
+                row.insertCell(2).innerText = email;
+                row.insertCell(3).innerText = age;
+                row.insertCell(4).innerText = gender;
+                row.insertCell(5).innerText = interests;
+                row.insertCell(6).innerText = birthdate;
+            }
+        };
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kullanıcı Verileri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        @media (max-width: 768px) {
+
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+            th {
+                position: sticky;
+                top: 0;
+            }
+
+            td {
+                text-align: left;
+                padding-left: 50%;
+                position: relative;
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formdan Gelen Kullanıcı Bilgileri</h1>
+
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>Ad Soyad</th>
+                <th>Parola</th>
+                <th>E-posta</th>
+                <th>Yaş</th>
+                <th>Cinsiyet</th>
+                <th>İlgi Alanları</th>
+                <th>Doğum Tarihi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Veriler buraya eklenecek -->
+        </tbody>
+    </table>
+
+    <script>
+        window.onload = function () {
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get('name');
+            const password = params.get('password');
+            const email = params.get('email');
+            const age = params.get('age');
+            const gender = params.get('gender');
+            const interests = params.get('interests');
+            const birthdate = params.get('birthdate');
+
+            if (name && password && email) {
+                const tbody = document.querySelector('#userTable tbody');
+                const row = tbody.insertRow();
+
+                row.insertCell(0).innerText = name;
+                row.insertCell(1).innerText = '••••••'; // Parolayı gizlemek için
+                row.insertCell(2).innerText = email;
+                row.insertCell(3).innerText = age;
+                row.insertCell(4).innerText = gender;
+                row.insertCell(5).innerText = interests;
+                row.insertCell(6).innerText = birthdate;
+            }
+        };
+    </script>
+
+</body>
+
+</html>
